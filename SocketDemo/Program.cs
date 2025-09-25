@@ -7,18 +7,16 @@ builder.Services.AddCors(options =>
     options.AddPolicy("CorsPolicy", policy =>
     {
         policy
-            .WithOrigins("http://localhost:5173", "https://socketfront-dh2g.onrender.com") // frontend URL
+            .WithOrigins("http://localhost:5173", "https://socketfront-dh2g.onrender.com")
             .AllowAnyHeader()
             .AllowAnyMethod()
-            .AllowCredentials(); // IMPORTANT for SignalR
+            .AllowCredentials();
     });
 });
 
 // Add services to the container.
 builder.Services.AddSignalR();
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -33,16 +31,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseCors("CorsPolicy");
+// IMPORTANT: UseRouting must come before UseCors
 app.UseRouting();
 
+// CORS must be after UseRouting and before UseEndpoints
+app.UseCors("CorsPolicy");
 
-app.UseEndpoints(endpoints =>
-{
-    endpoints.MapHub<ChatHub>("/chathub");
-});
 app.UseAuthorization();
 
+// UseEndpoints is not needed in minimal APIs, use MapHub directly
+app.MapHub<ChatHub>("/chathub");
 app.MapControllers();
 
 app.Run();
