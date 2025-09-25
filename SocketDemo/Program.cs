@@ -7,10 +7,9 @@ builder.Services.AddCors(options =>
     options.AddPolicy("CorsPolicy", policy =>
     {
         policy
-            .WithOrigins("http://localhost:5173", "https://socketfront-dh2g.onrender.com")
+            .AllowAnyOrigin()  // This allows ALL origins
             .AllowAnyHeader()
-            .AllowAnyMethod()
-            .AllowCredentials();
+            .AllowAnyMethod();
     });
 });
 
