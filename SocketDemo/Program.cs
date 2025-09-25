@@ -7,7 +7,7 @@ builder.Services.AddCors(options =>
     options.AddPolicy("CorsPolicy", policy =>
     {
         policy
-            .WithOrigins("http://localhost:5173") // frontend URL
+            .WithOrigins("http://localhost:5173", "https://socketfront-dh2g.onrender.com") // frontend URL
             .AllowAnyHeader()
             .AllowAnyMethod()
             .AllowCredentials(); // IMPORTANT for SignalR

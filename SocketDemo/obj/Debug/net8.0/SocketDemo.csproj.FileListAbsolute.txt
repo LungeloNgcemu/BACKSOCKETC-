@@ -38,3 +38,10 @@ C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\Microsoft.Ext
 C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\Newtonsoft.Json.dll
 C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
+C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\out\web.config
+C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\out\appsettings.Development.json
+C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\out\appsettings.json
+C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\out\SocketDemo.deps.json
+C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\out\SocketDemo.runtimeconfig.json
+C:\Users\lunge\source\repos\SocketDemo\SocketDemo\bin\Debug\net8.0\out\SocketDemo.staticwebassets.endpoints.json
+C:\Users\lunge\source\repos\SocketDemo\SocketDemo\obj\Debug\net8.0\SocketDemo.sourcelink.json
